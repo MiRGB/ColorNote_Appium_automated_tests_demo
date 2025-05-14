@@ -1,1 +1,1 @@
-# Appium_automated_tests
+This repository contains files for automated tests using Appium. The included test scripts are designed to automate the process of verifying the functionality of the mobile application.

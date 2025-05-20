@@ -30,7 +30,7 @@ export const config = {
     //
     specs: [
         // ToDo: define location for spec files here
-        './test/specs/**/*.js'
+        './test/specs/android/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -61,11 +61,11 @@ export const config = {
     capabilities: [{
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',
-        //browserName: 'Chrome',
         'appium:deviceName': 'Pixel 8 WEBDRIVER',
         'appium:platformVersion': '15.0',
         'appium:automationName': 'UiAutomator2',
-        'appium:app': path.join(__dirname, 'app/android/ApiDemos-debug.apk')
+        'appium:app': path.join(__dirname, 'app/android/ColorNote+Notepad.apk'),
+        'appium:autoGrantPermissions': true
     }],
 
     //

@@ -1,14 +1,15 @@
 class MoveElChecklistScreen {
-    async addItem(TestItem2) {
+    async addItem(text) {
         // add second item
         await $('//*[@text="Add Item"]').click();
 
-        await $('//android.widget.EditText[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/edit"]').setValue(TestItem2);
+        await $('//android.widget.EditText[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/edit"]').setValue(text);
 
         await $('//android.widget.Button[@resource-id="android:id/button1"]').click();
 
-        await $('android=new UiSelector().textContains("Test Item 2")').waitForDisplayed({ timeout: 5000 });
-        await expect($('android=new UiSelector().textContains("Test Item 2")')).toHaveText(TestItem2);
+        const item = $(`android=new UiSelector().textContains("${text}")`);
+        await item.waitForDisplayed({ timeout: 5000 });
+        await expect(item).toHaveText(text);
     }
 
     async dragAndDrop() {

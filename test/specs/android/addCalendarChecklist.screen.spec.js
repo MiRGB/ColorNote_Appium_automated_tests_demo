@@ -35,8 +35,8 @@ describe('Add calendar checklist', () => {
 
         await AddCalendarChecklistScreen.okBtn.click();
 
-        await AddCalendarChecklistScreen.itemElement.waitForDisplayed({ timeout: 5000 });
-        await expect(AddCalendarChecklistScreen.itemElement).toHaveText(testItem1);
+        await AddCalendarChecklistScreen.itemElement().waitForDisplayed({ timeout: 5000 });
+        await expect(AddCalendarChecklistScreen.itemElement()).toHaveText(testItem1);
 
         // save checklist
         await AddCalendarChecklistScreen.saveChecklistBtn.click();

@@ -1,4 +1,4 @@
-import { aNote, aTest, bNote, bTest, cNote, cTest, dNote, dTest } from "../../data/data";
+import { notesList, notesMap } from "../../data/data";
 import DeleteNoteScreen from "../../screenobjects/android/deleteNote.screen";
 import SortNotesScreen from "../../screenobjects/android/sortNotes.screen";
 
@@ -8,10 +8,9 @@ describe('Sort Notes', () => {
     });
 
     it('add 4 notes', async () => {
-        await SortNotesScreen.addNote(bNote, bTest);
-        await SortNotesScreen.addNote(aNote, aTest);
-        await SortNotesScreen.addNote(dNote, dTest);
-        await SortNotesScreen.addNote(cNote, cTest);
+        for (const { note, test } of notesList) {
+            await SortNotesScreen.addNote(note, test);
+        }
     });
 
     it('change to "sort alphabetically"', async () => {
@@ -23,6 +22,6 @@ describe('Sort Notes', () => {
         await SortNotesScreen.firstEl.waitForDisplayed({ timeout: 5000 });
         const firstNote = await SortNotesScreen.firstEl;
 
-        await expect(firstNote).toHaveText(aNote);
+        await expect(firstNote).toHaveText(notesMap.aNote);
     }); 
 });

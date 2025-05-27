@@ -1,3 +1,4 @@
+import { testItem1 } from "../../data/data";
 import AddCalendarChecklistScreen from "./addCalendarChecklist.screen";
 
 class DeleteElChecklistScreen {
@@ -5,8 +6,8 @@ class DeleteElChecklistScreen {
         return $('//android.widget.ImageButton[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/btn_del"]');
     }
 
-    get checklistEl() {
-        return $('android=new UiSelector().textContains("Test Item 1")');
+    checklistEl(text = testItem1) {
+        return $(`android=new UiSelector().textContains("${text}")`);
     }
 
     async addCalendarChecklist(titleChecklist, testItem1) {
@@ -37,8 +38,8 @@ class DeleteElChecklistScreen {
             
         await AddCalendarChecklistScreen.okBtn.click();
             
-        await AddCalendarChecklistScreen.itemElement.waitForDisplayed({ timeout: 5000 });
-        await expect(AddCalendarChecklistScreen.itemElement).toHaveText(testItem1);
+        await AddCalendarChecklistScreen.itemElement().waitForDisplayed({ timeout: 5000 });
+        await expect(AddCalendarChecklistScreen.itemElement()).toHaveText(testItem1);
     }
 }
 

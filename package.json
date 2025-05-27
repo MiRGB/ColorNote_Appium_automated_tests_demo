@@ -1,5 +1,6 @@
 {
   "name": "wdio-appium",
+  "type": "module",
   "devDependencies": {
     "@wdio/appium-service": "^9.12.7",
     "@wdio/cli": "^9.12.7",

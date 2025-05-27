@@ -1,3 +1,5 @@
+import { testItem1 } from "../../data/data";
+
 class AddCalendarChecklistScreen {
     get menuNav() {
         return $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/icon_nav"]');
@@ -39,8 +41,8 @@ class AddCalendarChecklistScreen {
         return $('//android.widget.Button[@resource-id="android:id/button1"]');
     }
 
-    get itemElement() {
-        return $('android=new UiSelector().textContains("Test Item 1")');
+    itemElement(text = testItem1) {
+    return $(`android=new UiSelector().textContains("${text}")`);
     }
 
     get saveChecklistBtn() {

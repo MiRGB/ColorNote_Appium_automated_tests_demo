@@ -13,7 +13,7 @@ class SortNotesScreen {
     }
 
     get byColorBtn() {
-        return $('android=new UiSelector().textContains("by color")');
+        return $('//*[@text="by color"]');
     }
 
     get byAlphabeticallyBtn() {

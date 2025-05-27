@@ -13,6 +13,6 @@ describe('delete element on checklist', () => {
 
     it('delete element on checklist', async () => {
         await DeleteElChecklistScreen.deleteBtn.click();
-        await expect(DeleteElChecklistScreen.checklistEl).not.toBeExisting();
+        await expect(DeleteElChecklistScreen.checklistEl()).not.toBeExisting();
     });
 });

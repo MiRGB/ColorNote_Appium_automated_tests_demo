@@ -2,27 +2,27 @@ import AddNoteScreen from "../../screenobjects/android/addNote.screen";
 import { bodyValue, titleValue } from "../../data/data";
 
 describe('Add Notes', () => {
-    it('Skip Tutorial', async () => {
+    it('skip tutorial', async () => {
         await AddNoteScreen.skipBtn.click();
         await expect(AddNoteScreen.addNoteText).toBeDisplayed();
     });
 
-    it('Add note', async () => {
+    it('add note', async () => {
         await AddNoteScreen.addNoteText.click();
         await expect(AddNoteScreen.checklistText).toBeExisting();
         await AddNoteScreen.textText.click();
         await expect(AddNoteScreen.editingText).toBeDisplayed();
 
-        //add title
+        // add title
         await AddNoteScreen.titleInput.setValue(titleValue);
 
-        //add body
+        // add body
         await AddNoteScreen.bodyInput.addValue(bodyValue);
 
-        //save
+        // save
         await AddNoteScreen.saveNote();
 
-        //assertion
+        // assertion
         await expect(AddNoteScreen.editNoteBtn).toBeDisplayed();
 
         await expect(AddNoteScreen.bodyView).toHaveText(bodyValue);

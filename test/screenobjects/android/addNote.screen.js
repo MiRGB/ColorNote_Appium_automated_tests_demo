@@ -4,7 +4,7 @@ class AddNoteScreen {
     }
 
     get addNoteText() {
-        return $('//*[@text="Add note"]');
+        return $('//android.widget.ImageButton[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/main_btn1"]');
     }
 
     get checklistText() {

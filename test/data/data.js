@@ -1,2 +1,13 @@
 export const titleValue = "Test List";
 export const bodyValue = "Test1\nTest2\nTest3";
+export const titleChecklist = "Test Checklist";
+export const testItem1 = "Test Item 1";
+export const testItem2 = "Test Item 2";
+export const bNote = "B Note";
+export const bTest = "Test B";
+export const aNote = "A Note";
+export const aTest = "Test A";
+export const dNote = "D Note";
+export const dTest = "Test D";
+export const cNote = "C Note";
+export const cTest = "Test C";

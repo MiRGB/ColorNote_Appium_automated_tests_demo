@@ -18,6 +18,11 @@ The tests simulate user interactions such as adding and verifying notes in a not
 
 ---
 
+## Demo Link:
+Make sure to check the Allure report on GitHub Pages for detailed test results:
+
+👉 View Allure Test Report
+
 ## 🚀 How to Run the Tests Locally
 
 ### 🛠 Prerequisites
@@ -75,9 +80,21 @@ Alternatively, install the app directly from Google Play on your device or emula
 ### 5. Run the Tests
 Finally, run the test suite with:
 
-`npm run wdio`
+`npx wdio config/wdio.conf.js`
 
 This will execute your WebdriverIO tests using Appium.
+
+## 📊 Allure Report
+After the tests are executed, an Allure Report is automatically generated in the allure-report directory.
+
+To open the report locally, run:
+
+`npx allure open`
+
+### Demo Link:
+Make sure to check the Allure report on GitHub Pages for detailed test results:
+
+👉 View Allure Test Report
 
 ### 6. Configuration
 WebdriverIO is configured with Mocha framework, Appium service, and Android capabilities.

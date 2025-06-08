@@ -18,6 +18,11 @@ The tests simulate user interactions such as adding and verifying notes in a not
 
 ---
 
+## Demo Link:  
+Make sure to check the Allure report on GitHub Pages for detailed test results:
+
+👉 [View Allure Test Report](https://mirgb.github.io/Appium_automated_tests/)
+
 ## 🚀 How to Run the Tests Locally
 
 ### 🛠 Prerequisites
@@ -37,8 +42,8 @@ Run this command in your project root to install all required packages:
 
 `npm install`
 
-
 ### 2. Start Android Emulator or Connect Real Device
+
 Open Android Studio
 
 Launch an emulator with API 30 or above OR connect your real device via USB
@@ -49,8 +54,8 @@ Verify device connection:
 
 Your device/emulator should appear in the list.
 
-
 ### 3. Start Appium Server
+
 You can start Appium server in one of two ways:
 
 Globally installed Appium:
@@ -64,6 +69,7 @@ Or via npm script (if Appium installed locally):
 Make sure Appium server is running at `http://localhost:4723`.
 
 ### 4. Install the Tested App
+
 You need to manually install the ColorNote APK on your emulator or device. The APK is not included in this repo due to licensing.
 
 You can install it via:
@@ -73,20 +79,36 @@ You can install it via:
 Alternatively, install the app directly from Google Play on your device or emulator.
 
 ### 5. Run the Tests
+
 Finally, run the test suite with:
 
-`npm run wdio`
+`npx wdio config/wdio.conf.js`
 
 This will execute your WebdriverIO tests using Appium.
 
+## 📊 Allure Report
+
+After the tests are executed, an Allure Report is automatically generated in the allure-report directory.
+
+To open the report locally, run:
+
+`npx allure open`
+
+### Demo Link:  
+Make sure to check the Allure report on GitHub Pages for detailed test results:
+
+👉 [View Allure Test Report](https://mirgb.github.io/Appium_automated_tests/)
+
 ### 6. Configuration
+
 WebdriverIO is configured with Mocha framework, Appium service, and Android capabilities.
 
-TypeScript config (tsconfig.json) is used to provide IDE support for JS files.
+JavaScript config (`jsconfig.json`) is used to provide IDE support for JS files.
 
 ESLint with eslint-plugin-wdio ensures coding standards for test files.
 
 ### 7. Legal Notice
+
 This project is for educational and demonstration purposes only.
 
 No proprietary APK files, source code, or assets of ColorNote are included.

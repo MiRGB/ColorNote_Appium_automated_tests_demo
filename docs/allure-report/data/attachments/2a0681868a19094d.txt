@@ -1,0 +1,4 @@
+{
+  "using": "id",
+  "value": "com.socialnmobile.dictapps.notepad.color.note:id/month_view"
+}

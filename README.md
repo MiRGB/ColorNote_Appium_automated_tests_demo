@@ -3,6 +3,11 @@
 This repository contains automated UI test scripts written in **JavaScript** using **WebdriverIO** and **Appium** with the **Mocha** test framework.  
 The tests simulate user interactions such as adding and verifying notes in a note-taking Android application.
 
+## Demo Link:  
+Make sure to check the Allure report on GitHub Pages for detailed test results:
+
+👉 [View Allure Test Report](https://mirgb.github.io/Appium_automated_tests/)
+
 ---
 
 ## 📱 Application Under Test
@@ -17,11 +22,6 @@ The tests simulate user interactions such as adding and verifying notes in a not
 > These tests are for **educational and demonstration purposes only** and this project is **not affiliated with or endorsed by the creators of ColorNote**.
 
 ---
-
-## Demo Link:  
-Make sure to check the Allure report on GitHub Pages for detailed test results:
-
-👉 [View Allure Test Report](https://mirgb.github.io/Appium_automated_tests/)
 
 ## 🚀 How to Run the Tests Locally
 

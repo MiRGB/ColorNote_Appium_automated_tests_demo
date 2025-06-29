@@ -116,3 +116,10 @@ No proprietary APK files, source code, or assets of ColorNote are included.
 All trademarks and copyrights belong to their respective owners.
 
 Use responsibly and respect third-party application licenses.
+
+---
+
+## 📄 Copyright Notice
+
+Copyright © MiRGB, 2025.  
+All rights reserved.

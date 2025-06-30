@@ -6,7 +6,7 @@ The tests simulate user interactions such as adding and verifying notes in a not
 ## Demo Link:  
 Make sure to check the Allure report on GitHub Pages for detailed test results:
 
-👉 [View Allure Test Report](https://mirgb.github.io/Appium_automated_tests/)
+👉 [View Allure Test Report](https://mirgb.github.io/colornote-appium-automated-tests-demo/)
 
 ---
 
@@ -97,7 +97,7 @@ To open the report locally, run:
 ### Demo Link:  
 Make sure to check the Allure report on GitHub Pages for detailed test results:
 
-👉 [View Allure Test Report](https://mirgb.github.io/Appium_automated_tests/)
+👉 [View Allure Test Report](https://mirgb.github.io/colornote-appium-automated-tests-demo/)
 
 ### 6. Configuration
 
@@ -119,7 +119,7 @@ Use responsibly and respect third-party application licenses.
 
 ---
 
-## 📄 Copyright Notice
+## 📄 License
 
-Copyright © MiRGB, 2025.  
-All rights reserved.
+⚠️ This project is not open source. All rights reserved.  
+For review purposes only. See the [LICENSE](./LICENSE) file for full terms.
